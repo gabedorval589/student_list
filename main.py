@@ -20,7 +20,7 @@ def hello_world():
 
 @app.route("/students", methods=['GET'])
 def get_students():
-    return render_template("list_students.html")
+    return render_template("list_students.html", students = students)
 
 @app.route("/students", methods=['POST'])
 def add_students():
